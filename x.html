@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>一定時間ごと処理を行う</title>
+<script language="JavaScript"><!--
+n = 0;
+function myFunc()
+{
+	document.myFORM.result.value = n++;
+	timerID = setTimeout("myFunc()",1000);
+}
+// --></script>
+</head>
+<body onLoad='setTimeout("myFunc()",1000)'>
+<form name="myFORM">
+<input type="text" name="result">
+</form>
+</body>
+</html>
